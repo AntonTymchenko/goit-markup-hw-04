@@ -75,6 +75,10 @@ img {
   letter-spacing: 0.02em;
   color: inherit;
   text-decoration: none;
+
+  padding: 32px 0;
+  display: inline-flex;
+  align-items: center;
 }
 .nav-info:hover,
 .nav-info:focus {
@@ -93,9 +97,7 @@ img {
 .nav-list {
   display: flex;
 }
-.nav-item-info {
-  display: flex;
-}
+
 .nav-list-info {
   display: flex;
   margin-left: auto;
@@ -109,6 +111,30 @@ img {
 }
 .header.index-no-line {
   border-bottom: 1px solid transparent;
+}
+/* SVG imeges */
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-color);
+
+  margin-right: 10px;
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--akcent-text-button-color);
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--main-text-color);
+
+  margin-right: 10px;
+}
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--akcent-text-button-color);
 }
 /* =========HERO=========== */
 .main-hero {
@@ -180,6 +206,24 @@ img {
 
   display: inline-block;
   margin-bottom: 10px;
+}
+.capabilities-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/capabilities/antena.jpg);
+  background-size: contain;
+  margin-bottom: 30px;
+  display: block;
+}
+.clock::before {
+  background-image: url(../img/capabilities/clock.jpg);
+}
+.diagram::before {
+  background-image: url(../img/capabilities/diagram.jpg);
+}
+.astronaut::before {
+  background-image: url(../img/capabilities/astronaut.jpg);
 }
 /* ===========OCUPATION=============== */
 .occupation .container {
