@@ -63,6 +63,8 @@ img {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  width: 100%;
+  height: 100%;
 }
 .navlink:hover,
 .navlink:focus {
@@ -77,6 +79,10 @@ img {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .nav-info:hover,
 .nav-info:focus {
@@ -115,16 +121,15 @@ img {
 .nav-info {
   display: flex;
   align-items: center;
+  fill: currentColor;
 }
 .icon-envelope {
   display: inline-block;
   margin-right: 10px;
-  fill: currentColor;
 }
 .icon-smartphone {
   display: inline-block;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 /* =========HERO=========== */
@@ -296,8 +301,8 @@ img {
   border-radius: 50%;
 }
 .link-network {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -308,10 +313,12 @@ img {
   margin-right: 10px;
 }
 
-.link-network:hover {
+.link-network:hover,
+.link-network:focus {
   background-color: var(--akcent-text-button-color);
 }
-.link-network:hover .icon-network {
+.link-network:hover .icon-network,
+.link-network:focus .icon-network {
   fill: #ffffff;
 }
 
@@ -332,8 +339,8 @@ img {
   margin-right: 30px;
 }
 .link-clients {
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -407,23 +414,27 @@ img {
 }
 
 /* svg imeges join */
-.join-network {
-  fill: #ffffff;
-}
+
 .list-join {
   display: flex;
   justify-content: center;
 }
-.link-join {
+.item-join {
   width: 44px;
   height: 44px;
+}
+.link-join {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: flex;
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
+  fill: #ffffff;
 }
-.link-join:hover {
+.link-join:hover,
+.link-join:focus {
   background-color: var(--akcent-text-button-color);
 }
 .item-join:not(:last-child) {
@@ -486,8 +497,11 @@ img {
   margin-bottom: 4px;
 }
 .portfolio-link {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
+  width: 100%;
+  height: 100%;
 }
 .card-text {
   font-size: 16px;
@@ -507,8 +521,8 @@ img {
 .portfolio-card-item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-card-item:hover,
-.portfolio-card-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
